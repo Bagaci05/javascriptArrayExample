@@ -2,13 +2,13 @@ let cars = []; //létrehozom a listát az autúknak
 let cost = []; //létrehozom a listát az áraknak
 
 let numberOfItems = prompt("Hány árúcikket szeretnél a listához adni ?"); //Megkérdezzük, hány elemet szeretne a listába rakni
-for (let i = 0; i < numberOfItems; i++) {
+for (let i = 1; i <= numberOfItems; i++) {
   //Ismétlőciklus létrehozása
   cars.push(
     //listához hozzáadjuk az elemet amit be fogunk kérni
     prompt(
       //Bekérjük az elemet
-      parseInt(i + 1) + ". Autó neve"
+      `${i}. Autó neve`
     )
   );
 
@@ -16,7 +16,7 @@ for (let i = 0; i < numberOfItems; i++) {
     //listához hozzáadjuk az elemet amit be fogunk kérni
     prompt(
       //Bekérjük az elemet
-      parseInt(i + 1) + ". Autó ára"
+      `${i}. Autó ára`
     )
   );
 }
